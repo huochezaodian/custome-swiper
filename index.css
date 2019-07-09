@@ -1,0 +1,43 @@
+/* css变量 */
+:root {
+    --bg-color: bisque;
+}
+
+body {
+    overflow: scroll;
+}
+
+.swiper-vertical, .swiper-carousel {
+    margin-top: 20px;
+}
+
+.custom-swiper-slide {
+    width: 30vw;
+    height: 188px;
+    line-height: 188px;
+    text-align: center;
+    margin: 0 5px;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    font-size: 50px;
+}
+
+.swiper-vertical .custom-swiper-slide {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.swiper-carousel .custom-swiper-slide {
+    width: 100vw;
+    margin: 0;
+    background-color: initial;
+}
+
+.swiper-carousel .custom-swiper-slide span {
+    margin: 0 5px;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    display: inline-block;
+    width: 88vw;
+    height: 100%;
+}

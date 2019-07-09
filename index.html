@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CustomSwiper</title>
+        <link rel="stylesheet" href="./dist/CustomSwiper.css" />
+        <!-- <link rel="stylesheet" href="./index.css" /> -->
+        <script src="./dist/CustomSwiper.js"></script>
+    </head>
+    <body>
+        <div class="swiper-horizontal">
+            <div class="custom-swiper-container">
+                <div class="custom-swiper-wrapper custom-swiper-wrapper-horizontal">
+                    <div class="custom-swiper-slide">1</div>
+                    <div class="custom-swiper-slide">2</div>
+                    <div class="custom-swiper-slide">3</div>
+                    <div class="custom-swiper-slide">4</div>
+                    <div class="custom-swiper-slide">5</div>
+                    <div class="custom-swiper-slide">6</div>
+                    <div class="custom-swiper-slide">7</div>
+                    <div class="custom-swiper-slide">8</div>
+                    <div class="custom-swiper-slide">9</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-carousel">
+            <div class="custom-swiper-container">
+                <div class="custom-swiper-wrapper custom-swiper-wrapper-horizontal">
+                    <div class="custom-swiper-slide"><span>1</span></div>
+                    <div class="custom-swiper-slide"><span>2</span></div>
+                    <div class="custom-swiper-slide"><span>3</span></div>
+                    <div class="custom-swiper-slide"><span>4</span></div>
+                    <div class="custom-swiper-slide"><span>5</span></div>
+                    <div class="custom-swiper-slide"><span>6</span></div>
+                    <div class="custom-swiper-slide"><span>7</span></div>
+                    <div class="custom-swiper-slide"><span>8</span></div>
+                    <div class="custom-swiper-slide"><span>9</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-vertical">
+            <div class="custom-swiper-container">
+                <div class="custom-swiper-wrapper custom-swiper-wrapper-vertical">
+                    <div class="custom-swiper-slide">1</div>
+                    <div class="custom-swiper-slide">2</div>
+                    <div class="custom-swiper-slide">3</div>
+                    <div class="custom-swiper-slide">4</div>
+                    <div class="custom-swiper-slide">5</div>
+                    <div class="custom-swiper-slide">6</div>
+                    <div class="custom-swiper-slide">7</div>
+                    <div class="custom-swiper-slide">8</div>
+                    <div class="custom-swiper-slide">9</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            new CustomSwiper(document.querySelector('.swiper-horizontal'));
+            new CustomSwiper(document.querySelector('.swiper-carousel'), {carousel: true});
+            new CustomSwiper(document.querySelector('.swiper-vertical'), {direction: 'vertical'});
+        </script>
+    </body>
+</html>
